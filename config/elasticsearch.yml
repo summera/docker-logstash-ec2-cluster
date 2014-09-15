@@ -17,7 +17,8 @@ cloud:
 discovery:
   type: ec2
   ec2:
-    groups: ${ES_SECURITY_GROUP}
+    tag:
+      cluster: ${ES_CLUSTER_NAME}
   zen:
     ping:
       multicast:
