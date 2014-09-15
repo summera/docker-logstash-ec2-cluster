@@ -7,7 +7,6 @@ RUN apt-get -y install wget unzip
 # Set ENV vars
 ENV ES_CLUSTER_NAME elasticsearch
 ENV ES_AWS_REGION us-east-1
-ENV ES_SECURITY_GROUP elasticsearch
 
 # Install elasticsearch ec2 discovery plugin
 RUN mkdir -p /opt/logstash/plugins/cloud-aws
