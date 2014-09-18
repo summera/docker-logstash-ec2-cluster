@@ -30,3 +30,5 @@ network:
 node.master: false
 node.data: false
 plugin.mandatory: cloud-aws
+
+indices.fielddata.cache.size: 15%
